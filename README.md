@@ -1,6 +1,8 @@
 # ContactUs
 Full stack contact page app with ASP.NET Core and React
 
+![alt text](https://github.com/adamflitney/ContactUs/blob/master/ContactUsSS.jpg "Screenshot")
+
 ## Installation
 Requires recent versions of NodeJS, Visual Studio and SQL Server to be installed.
 Created with .NET Core 2.2
