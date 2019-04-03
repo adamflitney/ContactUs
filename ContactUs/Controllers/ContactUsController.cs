@@ -30,16 +30,23 @@ namespace ContactUs.Controllers
             }
             else
             {
-                try
+                if(message.senderName?.Length > 0 && message.emailAddress?.Length > 0 && message.message?.Length > 0)
                 {
-                    _dataRepository.Add(message);
+                    try
+                    {
+                        _dataRepository.Add(message);
+                    }
+                    catch (Exception e)
+                    {
+                        return StatusCode(StatusCodes.Status500InternalServerError);
+                    }
                 }
-                catch (Exception e)
+                else
                 {
-                    return StatusCode(StatusCodes.Status500InternalServerError);
+                    return BadRequest("1 or more required fields are empty.");
                 }
 
-                return Ok();
+                return Ok(new { success = "true"});
             }
         }
 

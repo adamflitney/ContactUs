@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactUsForm renders correctly 1`] = `
+<form
+  className="contact-form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="contactFormName"
+    >
+      Name
+    </label>
+    <input
+      className="form-control"
+      id="contactFormName"
+      name="name"
+      onChange={[Function]}
+      placeholder="e.g. Joe Bloggs"
+      required={true}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="contactFormEmail"
+    >
+      Email Address
+    </label>
+    <input
+      className="form-control"
+      id="contactFormEmail"
+      name="email"
+      onChange={[Function]}
+      placeholder="e.g. joe@bloggs.com"
+      required={true}
+      type="email"
+      value=""
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="contactFormMessage"
+    >
+      Enter your message
+    </label>
+    <textarea
+      className="form-control"
+      id="contactFormMessage"
+      name="message"
+      onChange={[Function]}
+      placeholder="Enter your message here."
+      required={true}
+      rows="4"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    className="btn btn-success"
+    id="submit-btn"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
